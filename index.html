@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+            text-shadow: 1px 1px 10px black;
+        }
+        img{
+            width: 300px;
+            height: 200px;
+            border-radius: 80px;
+        }
+        .md1>p,.md1>img{
+            position: absolute;
+        }
+        .md2>p,.md2>img{
+            position: absolute;
+            left: 400px;
+        }
+        .md3>p,.md3>img{
+            position: absolute;
+            left: 700px;
+        }
+        .md4>p,.md4>img{
+            position: absolute;
+            left: 600px;
+            top: 350px;
+        }
+        .md5>p,.md5>img{
+            position: absolute;
+            top: 350px;
+            left: 200px;
+        }
+        body{
+            background-color: aquamarine;
+            width: 1000px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: red; text-align: center;margin-left: 180px; text-shadow: 1px 1px 10px black;">Retro Bikes</h1><br>
+    <div class="md">
+        <div class="md1">
+            <p style="z-index: 1; left: 180px; font-weight: bold;">RE Hunter 350</p>
+            <img style="z-index: -1; left: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU5naDGawtpowa_ryOoMGYIQ6nlQb_jt_Sx7S-phgmGr4eFBexkXraWYu1hwxGHZRKl9Y&usqp=CAU" />
+        </div>
+        <div class="md2">
+            <p style="z-index: 1; left: 500px; font-weight: bold;">RE Classic 350</p>
+            <img style="z-index: -1; " src="https://www.credr.com/blog/wp-content/uploads/2022/05/Classic-350-Model-Image.png" />
+        </div>
+        <div class="md3">
+            <p style="z-index: 1; left: 800px; font-weight: bold;"> Yamaha RX 100</p>
+            <img class="md33" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtgvwNhXp861Dm8gGVNjY3AUFcI8aCGvGZ-vktmEM47lbDKKAxkDOuRd0nk_S32wfesls&usqp=CAU"/>
+        </div>
+        <div class="md4">
+            <p style="z-index: 1; left: 720px; font-weight: bold;">JAWA 42</p>
+            <img style="z-index: -1;" src="https://www.credr.com/blog/wp-content/uploads/2022/05/42-Right-Side-View.jpeg"/>
+        </div>
+        <div class="md5">
+            <p style="z-index: 1; left: 300px; font-weight: bold;">RE interceptor 650</p>
+            <img style="z-index: -1;" src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2022/12/royal-enfield-interceptor-650.jpg" />
+        </div>
+    </div>
+
+    <p style="color: black; background: yellow; margin-top: 500px;">here we used z-index property</p>
+</body>
+</html>
